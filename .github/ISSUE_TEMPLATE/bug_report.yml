@@ -1,0 +1,75 @@
+name: Bug report
+description: Report something that is not working as expected
+title: "[Bug] "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug summary
+      description: Briefly describe the issue.
+      placeholder: What broke?
+    validations:
+      required: true
+
+  - type: input
+    id: chat_url
+    attributes:
+      label: Chat session URL (required if related)
+      description: If this bug is associated with a chat session, paste the chat URL.
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List exact steps so we can reproduce.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      placeholder: What should happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Actual behavior
+      placeholder: What happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots_logs
+    attributes:
+      label: Screenshots and logs
+      description: Add screenshots, console output, or logs.
+      placeholder: Paste images/logs here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include app/service, version/commit, OS, browser, and deployment/cluster.
+      placeholder: |
+        - App/Service:
+        - Version/Commit:
+        - OS:
+        - Browser:
+        - Deployment/Cluster:
+    validations:
+      required: true

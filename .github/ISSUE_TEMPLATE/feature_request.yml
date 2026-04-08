@@ -1,0 +1,49 @@
+name: Feature request
+description: Suggest a new feature or enhancement
+title: "[Feature] "
+labels:
+  - feature-request
+  - needs-triage
+body:
+  - type: textarea
+    id: feature_summary
+    attributes:
+      label: Feature summary
+      description: Briefly describe the feature.
+      placeholder: What would you like to add?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_use_case
+    attributes:
+      label: Problem / use case
+      description: Who needs this and what problem does it solve?
+      placeholder: Describe the use case.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed solution
+      description: High-level idea of what should be built.
+      placeholder: Describe your proposed approach.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+      placeholder: List any alternatives you considered.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context (optional)
+      placeholder: Links, screenshots, mockups, related issues.
+    validations:
+      required: false
